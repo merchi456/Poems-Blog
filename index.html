@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(" https://www.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg ");
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 10px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://salesianas.org/wp-content/uploads/2017/07/MEN%C3%9A-SALESIANOS.jpg">
+    <h1> Poems Blog´s </h1>
+    <ul>
+      <li><a href="#">Acerca de mi</a></li>
+      <li><a href="#">Mejores poemas</a></li>
+      <li><a href="#">Poemas olvidados</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Francisco Garcia Lorca</h2>
+    <p>Escritor, diplomático y profesor español. Hermano de Federico García Lorca, perteneció a la tertulia de El Rinconcillo del Café Alameda, junto a otros muchos artistas granadinos de la época.Una de sus mejores obras es Llanto por Ignacio Sánchez Mejías </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Pablo Neruda</h2>
+    <p>Pablo Neruda es un poeta chileno galardonado con el Premio Nacional de Literatura y el Premio Nobel de Literatura. También se desempeñó como diplomático y fue miembro activo del partido comunista, compromiso político que muchas veces se ve plasmado en sus obras. Ampliamente conocido por sus obras Veinte poemas de amor y una canción desesperada y sus Cien sonetos de amor, también es el autor de poemas tales como Ahora es Cuba, Alturas de Macchu Picchu, Los enemigos y Si tú me olvidas, entre tantas otras.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Virginia Woolf</h2>
+    <p>Como Safo y otras autoras de esta lista, Virginia Woolf es un ícono no solamente de la literatura de mujeres sino también de la historia de la literatura queer (cuyos motivos la autora exploró sutilmente en su célebre novela Orlando). Aunque escribió fundamentalmente ficción, el ensayo Una habitación propia se volvió una de sus obras más célebres: en él, Woolf se pregunta por las dificultades específicas, materiales y subjetivas, que enfrenta una mujer que quiere convertirse en escritora.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
